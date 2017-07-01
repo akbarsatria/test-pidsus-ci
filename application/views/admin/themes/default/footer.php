@@ -2,10 +2,10 @@
   <!-- /.content-wrapper -->
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>Version</b> 1.0.0
+      <small><b>Version</b> 1.0.0</small>
     </div>
-    <strong>Copyright &copy; 2014-2016 <a href="http://soerojo.com" target="_blank">Tonny Soerojo & Rekan</a>.</strong> All rights
-    reserved.
+    <small>Copyright &copy; 2014-2016 <a href="http://soerojo.com" target="_blank">TONNY <strong>SOEROJO</strong> & Rekan</a>. All rights
+    reserved.</small>
   </footer>
 
   <!-- Control Sidebar -->

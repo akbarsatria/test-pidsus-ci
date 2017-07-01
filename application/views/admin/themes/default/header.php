@@ -8,6 +8,8 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.6 -->
     <link rel="stylesheet" href="<?= base_url() ?>assets/admin/bootstrap/css/bootstrap.min.css">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="<?= base_url() ?>assets/admin/bootstrap/css/bootstrap.css">
     <!-- Font Awesome -->
     <link href="<?= base_url() ?>assets/admin/bootstrap/fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- Ionicons -->
@@ -50,7 +52,7 @@
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>DIK</b></span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>LID/DIK</b> PIDSUS</span>
+          <span class="logo-lg">el-<b>PID</b> SUS</span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top">
@@ -61,83 +63,83 @@
 
           <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
-              <!-- Messages: style can be found in dropdown.less-->
-              <li class="dropdown messages-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <i class="fa fa-envelope-o"></i>
-                  <span class="label label-success">4</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li class="header">You have 4 messages</li>
-                  <li>
-                    <!-- inner menu: contains the actual data -->
-                    <ul class="menu">
-                      <li><!-- start message -->
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="<?= base_url() ?>assets/admin/dist/img/warih.jpeg" class="img-circle" alt="User Image">
-                          </div>
-                          <h4>
-                            Support Team
-                            <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li>
-                      <!-- end message -->
-                      <li>
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="<?= base_url() ?>assets/admin/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                          </div>
-                          <h4>
-                            AdminLTE Design Team
-                            <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="<?= base_url() ?>assets/admin/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
-                          </div>
-                          <h4>
-                            Developers
-                            <small><i class="fa fa-clock-o"></i> Today</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="<?= base_url() ?>assets/admin/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                          </div>
-                          <h4>
-                            Sales Department
-                            <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="<?= base_url() ?>assets/admin/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
-                          </div>
-                          <h4>
-                            Reviewers
-                            <small><i class="fa fa-clock-o"></i> 2 days</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="footer"><a href="#">See All Messages</a></li>
-                </ul>
-              </li>
+<!--               Messages: style can be found in dropdown.less
+<li class="dropdown messages-menu">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+    <i class="fa fa-envelope-o"></i>
+    <span class="label label-success">4</span>
+  </a>
+  <ul class="dropdown-menu">
+    <li class="header">You have 4 messages</li>
+    <li>
+      inner menu: contains the actual data
+      <ul class="menu">
+        <li>start message
+          <a href="#">
+            <div class="pull-left">
+              <img src="<?= base_url() ?>assets/admin/dist/img/warih.jpeg" class="img-circle" alt="User Image">
+            </div>
+            <h4>
+              Support Team
+              <small><i class="fa fa-clock-o"></i> 5 mins</small>
+            </h4>
+            <p>Why not buy a new awesome theme?</p>
+          </a>
+        </li>
+        end message
+        <li>
+          <a href="#">
+            <div class="pull-left">
+              <img src="<?= base_url() ?>assets/admin/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+            </div>
+            <h4>
+              AdminLTE Design Team
+              <small><i class="fa fa-clock-o"></i> 2 hours</small>
+            </h4>
+            <p>Why not buy a new awesome theme?</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="pull-left">
+              <img src="<?= base_url() ?>assets/admin/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+            </div>
+            <h4>
+              Developers
+              <small><i class="fa fa-clock-o"></i> Today</small>
+            </h4>
+            <p>Why not buy a new awesome theme?</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="pull-left">
+              <img src="<?= base_url() ?>assets/admin/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+            </div>
+            <h4>
+              Sales Department
+              <small><i class="fa fa-clock-o"></i> Yesterday</small>
+            </h4>
+            <p>Why not buy a new awesome theme?</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="pull-left">
+              <img src="<?= base_url() ?>assets/admin/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+            </div>
+            <h4>
+              Reviewers
+              <small><i class="fa fa-clock-o"></i> 2 days</small>
+            </h4>
+            <p>Why not buy a new awesome theme?</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="footer"><a href="#">See All Messages</a></li>
+  </ul>
+</li> -->
               <!-- Notifications: style can be found in dropdown.less
               <li class="dropdown notifications-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -346,7 +348,7 @@
             </li>
             <li class=" <?php if($this->uri->segment(2)=="register"){echo "active";}?> treeview">
               <a href="#">
-                <i class="fa fa-gavel"></i> <span>Proses Hukum</span>
+                <i class="fa fa-balance-scale"></i> <span>Proses Hukum</span>
                 <span class="pull-right-container">
                   <i class="fa fa-angle-left pull-right"></i>
                 </span>
@@ -373,36 +375,36 @@
                 </li>
                 <li class="<?php if($this->uri->segment(2)=="home"){echo "active";}?>">
                   <a href="#">
-                    <i class="fa fa-fw fa-odnoklassniki"></i> <span>Daftar Tahanan</span>
+                    <i class="fa fa-odnoklassniki"></i> <span>Daftar Tahanan</span>
                   </a>
                 </li>      
               </ul>
             </li>
             <li class=" <?php if($this->uri->segment(2)=="administrasi"){echo "active";}?> treeview">
               <a href="#">
-                <i class="fa fa-edit"></i> <span>Administrasi Data</span>
+                <i class="fa fa-database"></i> <span>Administrasi Data</span>
                 <span class="pull-right-container">
                   <i class="fa fa-angle-left pull-right"></i>
                 </span>
               </a>
               <ul class="<?php if($this->uri->segment(2)=="administrasi"){echo "active";}?> treeview-menu">
-                <li <?php if($this->uri->segment(3)=="kasus"){echo 'class="active"';}?>> <a href="<?= base_url() ?>admin/administrasi/kasus"><i class="fa fa-circle-o"></i> Tambah Kasus Baru</a></li>
-                <li <?php if($this->uri->segment(3)=="jaksa"){echo 'class="active"';}?>> <a href="<?= base_url() ?>admin/administrasi/jaksa"><i class="fa fa-circle-o"></i> Database Jaksa</a></li>
-                <li <?php if($this->uri->segment(3)=="kategori_subyek"){echo 'class="active"';}?>><a href="<?= base_url() ?>admin/administrasi/kategori_subyek"><i class="fa fa-circle-o"></i> Kategori Subyek</a></li>
-                <li <?php if($this->uri->segment(3)=="pasal"){echo 'class="active"';}?>><a href="<?= base_url() ?>admin/administrasi/pasal"><i class="fa fa-circle-o"></i> Pasal Disangkakan</a></li>
+                <!-- <li <?php if($this->uri->segment(3)=="kasus"){echo 'class="active"';}?>> <a href="<?= base_url() ?>admin/administrasi/kasus"><i class="fa fa-circle-o"></i> Tambah Kasus Baru</a></li> -->
+                <li <?php if($this->uri->segment(3)=="jaksa"){echo 'class="active"';}?>> <a href="<?= base_url() ?>admin/administrasi/jaksa"><i class="fa fa-user-md"></i>Jaksa / Personal</a></li>
+                <li <?php if($this->uri->segment(3)=="kategori_subyek"){echo 'class="active"';}?>><a href="<?= base_url() ?>admin/administrasi/kategori_subyek"><i class="fa fa-user-secret"></i> Kategori Subyek</a></li>
+                <li <?php if($this->uri->segment(3)=="pasal"){echo 'class="active"';}?>><a href="<?= base_url() ?>admin/administrasi/pasal"><i class="fa fa-book"></i> Pasal & UU</a></li>
               </ul>
             </li>
-            <li class=" <?php if($this->uri->segment(2)=="peraturan"){echo "active";}?>treeview">
-              <a href="#">
-                <i class="fa fa-book"></i> <span>Peraturan & UU</span>
-                <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
-                </span>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> Daftar UU</a></li>
-              </ul>
-            </li>
+<!--             <li class=" <?php if($this->uri->segment(2)=="peraturan"){echo "active";}?>treeview">
+  <a href="#">
+    <i class="fa fa-book"></i> <span>Pasal & UU</span>
+    <span class="pull-right-container">
+      <i class="fa fa-angle-left pull-right"></i>
+    </span>
+  </a>
+  <ul class="treeview-menu">
+    <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> Daftar UU</a></li>
+  </ul>
+</li> -->
             <!-- <li class="treeview">
               <a href="#">
                 <i class="fa fa-files-o"></i>
