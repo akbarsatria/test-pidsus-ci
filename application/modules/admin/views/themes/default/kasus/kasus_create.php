@@ -175,11 +175,12 @@
                 </div>
               </div>
             </div>
+            <!-- 
             <div class="box-body">
               <div class="rows"> 
                 <div class="col-lg-6 col-md-6 col-sm-12">
                   <h4>Data Obyek</h4>
-                  <!-- Obyek Pidana -->
+                  Obyek Pidana
                   <div class="form-group">
                     <label>Obyek Pidana</label>
                     <input type="text" class="form-control" placeholder="Enter ...">
@@ -187,7 +188,7 @@
                 </div>
               </div>
             </div>
-
+             -->
               <!-- End CONTENT -->
             
               </div>
