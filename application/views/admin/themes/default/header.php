@@ -38,7 +38,15 @@
 
     <!-- Bootstrap Javascript -->
     <script src="<?= base_url() ?>assets/admin/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
-
+    <script>
+      $(function () {
+          // Replace the <textarea id="editor1"> with a CKEditor
+          // instance, using default configuration.
+          CKEDITOR.replace('editor1');
+          //bootstrap WYSIHTML5 - text editor
+          $(".textarea").wysihtml5();
+        });
+        </script>
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>

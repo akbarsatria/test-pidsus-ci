@@ -253,21 +253,13 @@
 <script src="<?= base_url() ?>assets/admin/plugins/highchart/highcharts-3d.js"></script>
 <script src="<?= base_url() ?>assets/admin/plugins/highchart/exporting.js"></script>
 <script src="<?= base_url() ?>assets/admin/plugins/highchart/highcharts-more.js"></script>
-<script src="<?= base_url() ?>assets/admin/plugins/ckeditor/ckeditor.js"></script>
 <!-- InputMask -->
 <script src="<?= base_url() ?>assets/admin/plugins/input-mask/jquery.inputmask.js"></script>
 <script src="<?= base_url() ?>assets/admin/plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
 <script src="<?= base_url() ?>assets/admin/plugins/input-mask/jquery.inputmask.extensions.js"></script>
+<!-- CK Editor -->
+<script src="<?= base_url() ?>assets/admin/plugins/ckeditor/ckeditor.js"></script>
 
-<script>
-      $(function () {
-  // Replace the <textarea id="editor1"> with a CKEditor
-  // instance, using default configuration.
-  CKEDITOR.replace('editor2');
-  //bootstrap WYSIHTML5 - text editor
-  $(".textarea").wysihtml5();
-});
-</script>
 
 <script>
   $(function () {

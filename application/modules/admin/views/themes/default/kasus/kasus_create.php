@@ -1,18 +1,22 @@
       <section class="content-header">
-          <h1><a href='index.php' ><img class="push-left" src="<?= base_url() ?>assets/admin/dist/img/logo-kejaksaan.png" width="75"></a>
-            Dashboard
-            <small>Control panel</small>
-          </h1>
-          <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Dashboard</li>
-          </ol>
+         <div class="box-tools pull-right">
+        <a href="<?= base_url() ?>admin/register/kasus" class="btn btn-app"><span class="badge bg-yellow">3</span><i class="fa fa-list-ul"></i>RP-1</a>
+        <a href="<?= base_url() ?>admin/register/rp2" class="btn btn-app"><span class="badge bg-yellow">3</span><i class="fa fa-list-ul"></i>RP-2</a>
+        <a href="<?= base_url() ?>admin/register/rp3mum" class="btn btn-app "><span class="badge bg-yellow">3</span><i class="fa fa-list-ul"></i>RP-3MUM</a>
+        <a href="<?= base_url() ?>admin/register/rp3sus" class="btn btn-app "><span class="badge bg-yellow">3</span><i class="fa fa-list-ul"></i>RP-3SUS</a>
+        <a href="<?= base_url() ?>#" class="btn btn-app "><span class="badge bg-yellow">3</span><i class="fa fa-cubes"></i>RB-1</a>
+        <a href="<?= base_url() ?>#" class="btn btn-app "><span class="badge bg-yellow">3</span><i class="fa fa-users"></i>RT-1</a>
+      </div>
+  <h1><img class="push-left" src="<?= base_url() ?>assets/admin/dist/img/logo-kejaksaan.png" width="75">
+    Direktorat Penyidikan
+    <small>Tindak Pidana Khusus</small>
+  </h1>
         </section>
         <!-- Main content -->
         <section class="content">
           <div class="box box-default">
             <div class="box-header with-border">
-              <h3 class="box-title">Laporan Kasus Baru</h3>
+              <h3 class="box-title">CATATAN SINGKAT ISI LAPORAN/PENGADUAN</h3>
               <!-- <div class="box-tools pull-right">
                 <a href="<?= base_url() ?>admin/register/kasus" class="btn btn-warning">Back to list kasus</a>
               </div> -->
@@ -29,95 +33,161 @@
                   <?php endif; ?>
               <!-- Content -->
                 <!-- /.box-header -->
-                  <div class="row"> 
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                      <h4>DATA PELAPOR</h4>
-                      <!-- Nama Lengkap -->
-                      <div class="form-group">
-                        <label>Nama Lengkap</label>
-                        <input type="text" class="form-control" placeholder="Enter ..." id="nama_lengkap" name="nama_lengkap"></input>
-                      </div>
 
-                      <!-- Alamat -->
-                      <div class="form-group">
-                        <label>Alamat</label>
-                        <textarea class="form-control" rows="2" placeholder="Enter ..." id="alamat" name="alamat"></textarea>
-                      </div>
-                      <!-- Kota -->
-                      <div class="form-group">
-                        <label>Kota</label>
-                        <input type="text" class="form-control" placeholder="Enter ..." id="kota" name="kota">
-                      </div>
-                      <!-- KodePos -->
-                      <div class="form-group">
-                        <label>Kode Pos</label>
-                        <input type="text" class="form-control" placeholder="Enter ..." id="kodepos" name="kodepos">
-                      </div>
+                  <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12">
+              <h4>Data Kasus</h4>
+                <!-- Asal Surat -->
+                <div class="form-group">
+                  <label>Asal Surat</label>
+                  <input type="text" class="form-control" placeholder="(Laporan Kasus Baru per surat) ...">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <!-- No. Surat -->
+                <div class="form-group">
+                  <label>No. Surat</label>
+                  <input type="text" class="form-control" placeholder="Surat Pelapor ...">
+                </div>
+                <!-- Tanggal Surat-->
+                <div class="form-group">
+                  <label>Tanggal Surat</label>
+                  <div class="input-group date">
+                    <div class="input-group-addon">
+                      <i class="fa fa-calendar"></i>
                     </div>
-
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                      <h4>DATA KASUS</h4>
-                      <!-- Judul Kasus -->
-                      <div class="form-group">
-                        <label>Judul Kasus</label>
-                        <textarea class="form-control" rows="2" placeholder="Enter ..." id="judul_kasus" name="judul_kasus"></textarea>
-                      </div>
-                      <!-- Lokasi -->
-                      <div class="form-group">
-                        <label>Lokasi Kejadian</label>
-                        <textarea class="form-control" rows="1" placeholder="Enter ..." id="lokasi_kejadian" name="lokasi_kejadian"></textarea>
-                      </div>
-                      <!-- Tanggal Kejadian -->
-                      <div class="form-group">
-                        <label>Tanggal Kejadian</label>
-                        <div class="input-group date">
-                          <div class="input-group-addon">
-                            <i class="fa fa-calendar"></i>
-                          </div>
-                          <input type="text" class="form-control pull-right" id="datepicker" id="tanggal_kejadian" name="tanggal_kejadian">
-                        </div>
-                        <!-- /.input group -->
-                      </div>
+                    <input type="date" class="form-control pull-right" id="datepicker">
+                  </div>
+                  <!-- /.input group -->
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <!-- Diterima Tanggal-->
+                <div class="form-group">
+                  <label>Diterima Tanggal</label>
+                  <div class="input-group date">
+                    <div class="input-group-addon">
+                      <i class="fa fa-calendar"></i>
                     </div>
-                      <!-- /.form group -->
-
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <!-- text input -->
-                      <h4>DATA SUBYEK</h4>
-                      <div class="form-group">
-                        <label>Nama Terlapor</label>
-                        <input type="text" class="form-control" placeholder="Enter ..." id="nama_terlapor" name="nama_terlapor">
-                      </div>
-                        <!-- textarea -->
-                      <!-- <div class="form-group">
-                        <label>Lokasi Kejadian</label>
-                        <textarea class="form-control" rows="3" placeholder="Enter ..." id="lokasi_kejadian-subyek" name="lokasi_kejadian-subyek"></textarea>
-                      </div> -->
-
-                        <!-- small box -->
-                        <!-- text input -->
-                      <div class="form-group">
-                        <label> Lembaga</label>
-                        <input type="text" class="form-control" placeholder="Enter ..." id="lembaga" name="lembaga">
-                      </div>
-
-                        <!-- /.box-header -->
-
-                      <div class="form-group">
-                        <label>Kategori Subyek</label>
-                        <select class="form-control select2" style="width: 100%;" id="kategori_subyek" name="kategori_subyek">
-                          <option selected="selected">SWASTA</option>
-                          <option>PNS</option>
-                          <option>Hakim</option>
-                          <option>Pengacara</option>
-                          <option>Jaksa</option>
-                          <option>Gubernur</option>
-                          <option>Walikota</option>
-                        </select>
-                      </div>
-                        <!-- ./col -->
+                    <input type="date" class="form-control pull-right" id="datepicker">
+                  </div>
+                  <!-- /.input group -->
+                </div>
+                <!-- /.form group -->
+                <!-- Pembuat Catatan -->
+                <div class="form-group">
+                  <label>Pembuat Catatan</label>
+                  <input type="text" class="form-control" placeholder="Pejabat berwenang ...">
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <!-- Judul Kasus -->
+                <div class="form-group">
+                  <label>Judul Kasus: </label>
+                  <input type="text" class="form-control" placeholder="ANIM PARIATUR CLICHE REPREHENDERIT">
+                </div>
+                <div class="form-group">
+                <label>Kasus Posisi / Telaahan Masalah</label><br>
+                <form>
+                  <textarea id="editor1" name="editor" rows="10" cols="120">
+                    (BERISI URAIAN KASUS POSISI SECARA SINGKAT)
+                  </textarea>
+                </form>
+                </div>
+              </div>
+            </div>
+            <div class="rows"> 
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <h4>Data Pelapor</h4>
+                <!-- Nama Lengkap -->
+                <div class="form-group">
+                  <label>Nama Lengkap</label>
+                  <input type="text" class="form-control" placeholder="Enter ...">
+                </div>
+                <!-- Alamat -->
+                <div class="form-group">
+                  <label>Alamat</label>
+                  <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-12">
+                    <!-- Kota -->
+                    <div class="form-group">
+                      <label>Kota</label>
+                      <input type="text" class="form-control" placeholder="Enter ...">
                     </div>
                   </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="form-group">
+                      <label>Propinsi</label>
+                      <input type="text" class="form-control" placeholder="Enter ...">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="form-group">
+                      <label>Kode Pos</label>
+                      <input type="text" class="form-control" placeholder="Enter ...">
+                    </div>
+                  </div>
+                </div>
+                <div class="row"> 
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <div class="input-group-addon">
+                          <i class="fa fa-phone"></i>
+                        </div>
+                        <input type="text" class="form-control" data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask="">
+                      </div>
+                      <!-- /.input group -->
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <div class="input-group-addon">
+                          <i class="fa fa-mobile"></i>
+                        </div>
+                        <input type="text" class="form-control" data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask="">
+                      </div>
+                      <!-- /.input group -->
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                      <input type="email" class="form-control" placeholder="Email">
+                    </div>                  
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <!-- text input -->
+                <h4>Data Subyek [Terlapor]</h4>
+                <div class="form-group">
+                  <label>Nama Lengkap</label>
+                  <input type="text" class="form-control" placeholder="Enter ...">
+                </div>
+                <!-- text input -->
+                <div class="form-group">
+                  <label> Lembaga</label>
+                  <input type="text" class="form-control" placeholder="Enter ...">
+                </div>
+              </div>
+            </div>
+            <div class="box-body">
+              <div class="rows"> 
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <h4>Data Obyek</h4>
+                  <!-- Obyek Pidana -->
+                  <div class="form-group">
+                    <label>Obyek Pidana</label>
+                    <input type="text" class="form-control" placeholder="Enter ...">
+                  </div>
+                </div>
+              </div>
+            </div>
+
               <!-- End CONTENT -->
             
               </div>
