@@ -8,7 +8,7 @@
     <li><a href='<?= base_url('admin/register/rp3sus/edit/'.$list['id']) ?>' class="text-right">Edit &nbsp;&nbsp;<i class="glyphicon glyphicon-pencil"></i></a></li>
     <li><a href='<?= base_url() ?>admin/register/rp3sus/geledah' class="text-right">Sprint Geledah &nbsp;&nbsp;<i class="glyphicon glyphicon-plus text-red"></i></a></li>
     <li role="separator" class="divider"></li>
-    <li><a href='<?= base_url() ?>admin/register/rp3sus/tahapan' class="text-right text-red"><strong>Berkas Tahap II &nbsp;&nbsp;<i class="glyphicon glyphicon-share-alt text-red"></i></strong></a> </li>
+    <li><a href='<?= base_url() ?>admin/register/rp3sus/berkas_tahap_2' class="text-right text-red"><strong>Berkas Tahap II &nbsp;&nbsp;<i class="glyphicon glyphicon-share-alt text-red"></i></strong></a> </li>
   </ul>
 </div><!-- end button group -->
 <div class="panel-heading" role="tab" id="headingOne"> 
