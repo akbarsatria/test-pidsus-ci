@@ -10,12 +10,13 @@ class Rp3mum extends Admin_Controller {
         $data['page'] = $this->config->item('ci_my_admin_template_dir_admin') . "rp3mum/perkara_penyidikan_umum_list";
         $this->load->view($this->_container, $data);
     }
+
     public function geledah() {
         $data['page'] = $this->config->item('ci_my_admin_template_dir_admin') . "rp3mum/perkara_penyidikan_umum_geledah";
         $this->load->view($this->_container, $data);
     }
 
-    public function naik_dik_sus($id) {
+    public function naik_dik_sus() {
         $data['page'] = $this->config->item('ci_my_admin_template_dir_admin') . "perkara_penyidikan_khusus_create";
         $this->load->view($this->_container, $data);
     }

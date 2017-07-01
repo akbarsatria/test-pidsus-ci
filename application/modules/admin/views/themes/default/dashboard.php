@@ -12,8 +12,6 @@
     <!-- Main content -->
     <section class="content">
         <?php include_once('modul/data_perkara.php'); ?>
-        
-        
         <div class="row">
             <div class="col-md-12">
               <div class="box">
@@ -96,6 +94,8 @@
                     </div>
                     <div class="col col-lg-6">
                         <?php include_once('modul/3dscatter.php'); ?>
+
+
                     </div>
 
                   </div>

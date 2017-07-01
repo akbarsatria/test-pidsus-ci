@@ -11,7 +11,7 @@
             <div class="icon">
               <i class="fa fa-eye"></i>
             </div>
-            <a href="dashboard_v2.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="<?= base_url() ?>admin/register/rp2" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -26,7 +26,7 @@
             <div class="icon">
               <i class="fa fa-gavel"></i>
             </div>
-            <a href="dashboard_v2.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="<?= base_url() ?>admin/register/rp3mum" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -41,7 +41,7 @@
             <div class="icon">
               <i class="fa fa-balance-scale"></i>
             </div>
-            <a href="dashboard_v2.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="<?= base_url() ?>admin/register/rp3sus" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->

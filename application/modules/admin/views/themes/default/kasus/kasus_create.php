@@ -89,9 +89,9 @@
                 <div class="form-group">
                 <label>Kasus Posisi / Telaahan Masalah</label><br>
                 <form>
-                  <textarea id="editor1" name="editor" rows="10" cols="120">
+                  <kasusposisi id="editor1" name="editor">
                     (BERISI URAIAN KASUS POSISI SECARA SINGKAT)
-                  </textarea>
+                  </kasusposisi>
                 </form>
                 </div>
               </div>

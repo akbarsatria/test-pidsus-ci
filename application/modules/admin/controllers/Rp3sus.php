@@ -15,7 +15,7 @@ class Rp3sus extends Admin_Controller {
         $this->load->view($this->_container, $data);
     }
 
-    public function berkas_tahap_2($id) {
+    public function berkas_tahap_2() {
         $data['page'] = $this->config->item('ci_my_admin_template_dir_admin') . "perkara_penuntutan_create";
         $this->load->view($this->_container, $data);
     }

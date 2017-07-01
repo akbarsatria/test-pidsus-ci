@@ -35,18 +35,21 @@
     <link rel="stylesheet" href="<?= base_url() ?>assets/admin/plugins/timepicker/bootstrap-timepicker.min.css">
     <!-- bootstrap wysihtml5 - text editor -->
     <link rel="stylesheet" href="<?= base_url() ?>assets/admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <!-- tinymce -->
+    <script src="<?= base_url() ?>tinymce/js/tinymce/jquery.tinymce.min.js"></script>
+    <script src="<?= base_url() ?>tinymce/js/tinymce/tinymce.min.js"></script>
+    <!-- tinymce-setting -->
+    <script src="<?= base_url() ?>assets/admin/dist/js/pages/tinymce.js"></script>
+    
+    <!-- Select2 -->
+<script src="<?= base_url() ?>assets/admin/plugins/select2/select2.full.min.js"></script>
+    <!-- select2-setting -->
+    <script src="<?= base_url() ?>assets/admin/dist/js/pages/select2.js"></script>
+
 
     <!-- Bootstrap Javascript -->
     <script src="<?= base_url() ?>assets/admin/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
-    <script>
-      $(function () {
-          // Replace the <textarea id="editor1"> with a CKEditor
-          // instance, using default configuration.
-          CKEDITOR.replace('editor1');
-          //bootstrap WYSIHTML5 - text editor
-          $(".textarea").wysihtml5();
-        });
-        </script>
+    
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -59,7 +62,7 @@
 
       <header class="main-header">
         <!-- Logo -->
-        <a href="index2.html" class="logo">
+        <a href="<?= base_url() ?>admin/home/dashboard" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>DIK</b></span>
           <!-- logo for regular state and mobile devices -->
