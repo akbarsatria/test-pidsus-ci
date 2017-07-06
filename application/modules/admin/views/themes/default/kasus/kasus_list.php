@@ -27,29 +27,29 @@
           <table class="table table-hover">
               <tr>
                 <th width="5%">ID</th>
-                <th width="40%">Kasus Posisi</th>
-                <th width="20%">Terlapor</th>
-                <th width="20%">Obyek</th>
+                <th width="60%">Kasus Posisi</th>
+                <th width="20%">Keterangan</th>
+                <!-- <th width="20%">Obyek</th> -->
                 <th width="15%">Action</th>
               </tr>
 
               <?php if (count($detail_kasus_subyek)): ?>
                 <?php foreach ($detail_kasus_subyek as $key => $list): ?>
                     <tr>
-                        <td><?=$list['id']?></td>
+                        <td><?=$list['id_detail']?></td>
                         <td><?=$list['judul_kasus']?></td>
                         <td><?=$list['nama_terlapor']?></td>
-                        <td><?=$list['lembaga']?></td>
+                        <!-- <td><?=$list['lembaga']?></td> -->
                         
                         <!-- <td><?=$list['jabatan_resmi']?></td>
                         <td><?=$list['lembaga']?></td> -->
                         <!-- <td><?=$list['kasus_posisi']?></td> -->
     
                         <td>
-                            <div class="btn-group" role="group" aria-label="...">
-                              <a href='<?= base_url('admin/register/kasus/edit/'.$list['id']) ?>' class="btn btn-default btn-sm"><i class="glyphicon glyphicon-pencil"></i></a>
-                              <a href='<?= base_url('admin/register/kasus/delete/'.$list['id']) ?>' class="btn btn-default btn-sm"><i class="glyphicon glyphicon-minus-sign"></i></a>
-                              <a href='<?= base_url() ?>admin/register/kasus/naik_lidik' class="btn btn-success btn-sm">LIDIK</a>
+                            <div class="btn-group-vertical pull-right" role="group" aria-label="...">
+                              <a href='<?= base_url('admin/register/kasus/edit/'.$list['id_detail']) ?>' class="btn btn-default btn-xs"><i class="glyphicon glyphicon-pencil"></i></a>
+                              <a href='<?= base_url('admin/register/kasus/delete/'.$list['id_detail']) ?>' class="btn btn-default btn-xs"><i class="glyphicon glyphicon-minus-sign"></i></a>
+                              <a href='<?= base_url('admin/register/kasus/naik_lidik/'.$list['id_detail']) ?>' class="btn btn-success btn-xs">LIDIK</a>
                             </div>
                         </td>
                     </tr>
@@ -59,13 +59,13 @@
                           <td>#</td>
                           <td>No data</td>
                           <td>No data</td>
-                          <td>No data</td>
+                          <!-- <td>No data</td> -->
                           <!-- <td>No data</td>
                           <td>No data</td> -->
                           <!-- <td>No data</td> -->
                           
                           <td>
-                            <div class="btn-group" role="group" aria-label="...">
+                            <div class="btn-group-vertical pull-right" role="group" aria-label="...">
                               <a href='#' class="btn btn-default btn-sm"><i class="glyphicon glyphicon-pencil"></i></a>
                               <a href='#' class="btn btn-default btn-sm"><i class="glyphicon glyphicon-minus-sign"></i></a>
                               <a href='#' class="btn btn-success btn-sm">LIDIK</a>

@@ -59,7 +59,7 @@ $route['admin/home/dashboard1'] = 'admin/admin1';
 //register - kasus
 $route['admin/register/kasus'] = 'admin/kasus';
 $route['admin/register/kasus/create'] = 'admin/kasus/create';
-$route['admin/register/kasus/naik_lidik'] = 'admin/kasus/naik_lidik';
+$route['admin/register/kasus/naik_lidik/(:any)'] = 'admin/kasus/naik_lidik/$1';
 $route['admin/register/kasus/edit/(:any)'] = 'admin/kasus/edit/$1';
 $route['admin/register/kasus/delete/(:any)'] = 'admin/kasus/delete/$1';
 
@@ -68,6 +68,8 @@ $route['admin/register/subyek'] = 'admin/subyek';
 // Register - RP2
 $route['admin/register/rp2'] = 'admin/rp2';
 $route['admin/register/rp2/geledah'] = 'admin/rp2/geledah';
+$route['admin/register/rp2/create_sprint_lidik/(:any)'] = 'admin/rp2/create_sprint_lidik/$1';
+$route['admin/register/rp2/create'] = 'admin/rp2/create';
 $route['admin/register/rp2/naik_dik_mum'] = 'admin/rp2/naik_dik_mum';
 $route['admin/register/rp2/edit/(:any)'] = 'admin/rp2/edit/$1';
 $route['admin/register/rp2/delete/(:any)'] = 'admin/rp2/delete/$1';
